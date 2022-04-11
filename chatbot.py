@@ -29,7 +29,6 @@ def send():
                 counter = counter +1
                 target_lang = 'zh-CN'
             else:
-                print('stuck')
                 txt.insert(END,"\n\nInvalid user input, try entering 1,2 or 3")
 
     else:
