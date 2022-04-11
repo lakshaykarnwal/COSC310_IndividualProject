@@ -1,7 +1,7 @@
 import os
 from google.cloud import translate_v2 as translate
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"C:\Users\trans\Documents\GitHub\COSC310_IndividualProject\chatbot-key.json"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"C:\Users\trans\Downloads\chatbot-346710-a6d2f263a5e6.json"
 
 translate_client = translate.Client()
 
