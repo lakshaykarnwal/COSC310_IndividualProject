@@ -18,8 +18,8 @@ The api is implemented in following parts:
 1. Authentication of Google Credentials
 2. Methods to convert from one language to the other
 3. Adding the translated responsed to the GUI
-   s
-   Firstly, the translator.py script uses the translate_v2 module from google.cloud. Then I use the Service Account credentials JSON file obtained while creating a new Service Account Key to set up the Google Cloud environment variable and hence authenticate my project details.
+
+Firstly, the translator.py script uses the translate_v2 module from google.cloud. Then I use the Service Account credentials JSON file obtained while creating a new Service Account Key to set up the Google Cloud environment variable and hence authenticate my project details.
 
 The script uses two methods to translate the conversation -
 
