@@ -35,6 +35,10 @@ The Flickr API is well known for its image and caption datasets. I decided to us
 
 For the implementation details check the API_implementation file.
 
+![GUI Screenshot](https://user-images.githubusercontent.com/60047109/162911260-c51095f1-68f5-40c3-8e9d-343de079c232.jpeg)
+
+This is the cute pet image that shows up.
+
 
 ### Assignment 3 tasks:
 
