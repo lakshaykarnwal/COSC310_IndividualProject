@@ -30,7 +30,7 @@ def url_to_jpg(i, url, file_path, saved_name):
     print('{} saved.'.format(filename))
     return None
 
-urls_cute = searchFlickrImages('cute')
+"""urls_cute = searchFlickrImages('cute')
 file_path = 'images/cute_pets/'
 saved_name = 'cutePet'
 counter = 0
@@ -40,4 +40,4 @@ for url in urls_cute:
     print("saved")
     counter = counter + 1
 
-print("completed")
+print("completed")"""
