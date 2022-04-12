@@ -21,7 +21,7 @@ Several libraries were used: tkntr, random, json, pickle, numpy, nltk (Porterste
 For the individual project, I utilized two public APIs: Google translate API and Flickr API. Implementing these two APIs increased the functionality of my chatbot. I have explained the use of the two APIs below.
 
 #### Google Translate API
-![GUI Screenshot](https://raw.githubusercontent.com/durvanZ/COSC310_Team3/main/screenshots/botdemo.png)
+![GUI Screenshot](https://user-images.githubusercontent.com/60047109/162899488-91d0aedf-2d1d-4fab-9a58-887d6ce67a45.png)
 
 The translate API is used to add three different language options for the users. Since, Hudson's drip customer service chatbot is going to be used in Canada, I have included the option for users to choose among the top three languages spoken in Canda. The three language options are: English, French and Chinese (since mandarin is not provided by google translate).
 
@@ -30,6 +30,8 @@ When the chatbot starts, the user is asked to choose their language of choice. A
 #### Flickr API
 
 The Flickr API is well known for its image and caption datasets. I decided to use this api to include media in the chatbot. Using the Flickr api I was able to scrape images of cute pets from their online dataset. Then, I used these images to be displayed whenever the user was extremely frustrated during the conversation. It is always helpful to make a person smile, when they are not feeling the best :)
+
+![GUI Screenshot](https://user-images.githubusercontent.com/60047109/162899014-b0bc8899-d1f9-4a3c-a8c5-fda75e9e807b.png)
 
 For the implementation details check the API_implementation file.
 
