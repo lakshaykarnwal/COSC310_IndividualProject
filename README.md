@@ -29,7 +29,11 @@ When the chatbot starts, the user is asked to choose their language of choice. A
 
 #### Flickr API
 
-The Automated Unit Testing Framework used for this was pytest due to its easy to use module functions. We created multiple test cases for all the important functions which checks if all the functions are working as desired. You can run the Unit testing file using the pytest command. After running the test file, pytest displays a summary of failed and passed functions. If the functions do not pass that means the chatbot will have errors, if all the functions pass that means the program is working as desired.
+The Flickr API is well known for its image and caption datasets. I decided to use this api to include media in the chatbot. Using the Flickr api I was able to scrape images of cute pets from their online dataset. Then, I used these images to be displayed whenever the user was extremely frustrated during the conversation. It is always helpful to make a person smile, when they are not feeling the best :)
+
+For the implementation details check the API_implementation file.
+
+
 ### Assignment 3 tasks:
 
 #### GUI Implementation
