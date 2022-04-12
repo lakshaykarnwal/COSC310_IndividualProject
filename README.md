@@ -16,6 +16,20 @@ Several libraries were used: tkntr, random, json, pickle, numpy, nltk (Porterste
 - Ravil Bigvava
 - Jordan onwuvuche
 
+### Individual Project tasks:
+
+For the individual project, I utilized two public APIs: Google translate API and Flickr API. Implementing these two APIs increased the functionality of my chatbot. I have explained the use of the two APIs below.
+
+#### Google Translate API
+![GUI Screenshot](https://raw.githubusercontent.com/durvanZ/COSC310_Team3/main/screenshots/botdemo.png)
+
+The translate API is used to add three different language options for the users. Since, Hudson's drip customer service chatbot is going to be used in Canada, I have included the option for users to choose among the top three languages spoken in Canda. The three language options are: English, French and Chinese (since mandarin is not provided by google translate).
+
+When the chatbot starts, the user is asked to choose their language of choice. After the user makes their selection the conversation proceeds in that selected language. For the implementation details check the API_implementation file.
+
+#### Flickr API
+
+The Automated Unit Testing Framework used for this was pytest due to its easy to use module functions. We created multiple test cases for all the important functions which checks if all the functions are working as desired. You can run the Unit testing file using the pytest command. After running the test file, pytest displays a summary of failed and passed functions. If the functions do not pass that means the chatbot will have errors, if all the functions pass that means the program is working as desired.
 ### Assignment 3 tasks:
 
 #### GUI Implementation
