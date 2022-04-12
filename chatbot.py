@@ -2,6 +2,8 @@ from predict import *
 from tkinter import *
 from translator import *
 from nltk import stem
+from PIL import Image, ImageTk
+from flickr import *
 
 counter = 0
 target_lang = ''
@@ -10,6 +12,8 @@ dank_memes = "https://www.reddit.com/r/dankmemes/"
 res = ""
 stemmer = stem.PorterStemmer()
 root = Tk()
+#frame = Frame(root, width=600, height=400)
+#frame.pack()
 
 def send():
     message = e.get()
@@ -51,13 +55,16 @@ def send():
 
         response_predict = get_response(ints, intents)
 
+        url = ''
+        url = random_cute_pet()
+
         if (negative_vibes >= 0.55):
             empathy_response = random.choice(["I am really sorry to hear that.", "We're sorry about that...",
                                             ":(( That's so unfortunate.", "I understand your sentiment. Please allow me to help you, what do you need to know?"])
             res = empathy_response
             if (negative_vibes >= 0.65):
                 response_predict += random.choice( ##replacement of predicted response
-                    [f"Here are some cat videos: {cat_vids}", f"Here are some dank memes: {dank_memes}"])
+                    [f"Hope this helps: {url}", f"Here are some dank memes: {dank_memes}"])
         elif (positive_vibes >= 0.7):
             empathy_response = random.choice([":)", "Happy spring!!!", "I'm glad that you're satistifed with my service.",
                                             "Fantastic!!!", "Awesome!", "I LOVE to hear that!", "You fill my heart with joy :))"])+"\n"
@@ -65,10 +72,15 @@ def send():
         response_predict = translate_to_target(response_predict,target_lang)
         empathy_response = translate_to_target(empathy_response,target_lang)
         final_response = "> Bot: {0} ".format(empathy_response) + response_predict
+        #post_image()
         txt.insert(END, "\n" + final_response)
     
     e.delete(0, END)
 
+def random_cute_pet():
+    urls = searchFlickrImages('cute')
+    url = random.choice(urls)
+    return (url)
 
 txt = Text(root)
 txt.grid(row=0, column=0, columnspan=2)
@@ -78,5 +90,6 @@ e.grid(row=1, column=0)
 root.title("Customer Service Chatbot")
 txt.insert(END, "Click 'Speak' to interact with the customer service bot")
 txt.insert(END, '\n\n Select your language of choice: \n Type 1 for English, \n 2 for French and \n 3 for Chinese')
+#post_image()
 
 root.mainloop()
