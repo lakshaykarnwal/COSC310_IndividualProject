@@ -1,7 +1,5 @@
 ## API Implentation
 
-Unit Testing Framework: Pytest for Python. We used the assert keyword from Pytest module to check if the return values of the function produce the desired result.
-
 Two APIs were added for the individual project assignment:
 
 1. Google Transalte API
